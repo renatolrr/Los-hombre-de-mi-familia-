@@ -41,15 +41,15 @@ do
     mv "html/$fichero" "html/${fichero%.md}.html"
 done
 
-sed -i '1{
-    h
-    r ../script/include.css
-    D
-}
-2{
-    x
-    G
-    }' html/*.html
+#sed -i '1{
+#    h
+#    r ../script/include.css
+#    D
+#}
+#2{
+#   x
+#    G
+#    }' html/*.html
 
-sed -i 's/<img src="..\/img/<img src="http:\/\/campusvirtual.ugr.es\/moodle\/file.php\/2142\/img/g' html/*.html
+#sed -i 's/<img src="..\/img/<img #src="http:\/\/campusvirtual.ugr.es\/moodle\/file.php\/2142\/img/g' html/*.html
 
